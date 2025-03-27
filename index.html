@@ -7,14 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>What Should I Eat Today?</h1>
-    <h2 id="meal-name">Meal Name</h2>
-    <img id="meal-image" src="" alt="Meal Image">
-    <h3>Ingredients:</h3>
-    <ul id="meal-ingredients"></ul>
-    <h3>Instructions:</h3>
-    <p id="meal-instructions"></p>
-    <button id = "new-meal-btn"> Get New Meal </button>
+
+    <div class="container">
+        <h1>What Should I Eat Today?</h1>
+        
+        <div class="select-container">
+            <label for="category-select">Choose a Category:</label>
+            <select id="category-select">
+                <option value="">Random</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Beef">Beef</option>
+                <option value="Chicken">Chicken</option>
+            </select>
+
+            <label for="country-select">Choose a Country:</label>
+            <select id="country-select">
+                <option value="">Random</option>
+                <option value="Italian">Italian</option>
+                <option value="French">French</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Indian">Indian</option>
+                <option value="Japanese">Japanese</option>
+            </select>
+
+            <button id="new-meal-btn">Get a New Recipe</button>
+        </div>
+
+        <div id="meal-container">
+            <h2 id="meal-name"></h2>
+            <img id="meal-image" src="" alt="">
+
+            <div class="recipe-section">
+                <h3>Ingredients</h3>
+                <ul id="meal-ingredients"></ul>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Instructions</h3>
+                <p id="meal-instructions"></p>
+            </div>
+            
+            <iframe id="meal-video" allowfullscreen></iframe>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
